@@ -31,7 +31,7 @@ class Example(QWidget):
         lbl.move(50, 100)
 
         file_type_combo = QComboBox(self)
-        file_type_combo.addItems([".txt"])
+        file_type_combo.addItems([".txt", ".zup"])
         self.file_type = ".txt"
         file_type_combo.move(50, 120)
         file_type_combo.activated[str].connect(self.file_type_signal)
