@@ -14,7 +14,7 @@ def define_segments(alphabet, probs):
         l = right
     return segments
 
-def ariphmetic_encode(alphabet, probs, text): 
+def arithmetic_encoding(alphabet, probs, text): 
     segments = define_segments(alphabet, probs)
     # print(segments)
     left = 0
@@ -34,7 +34,7 @@ def define_segments2(alphabet, probs):
         l = right
         return segments
 
-def ariphmetic_decode(alphabet, probs, code, text_len, segments):
+def arithmetic_decode(alphabet, probs, code, text_len, segments):
     segments = define_segment2(alphabet, probs)
     res = []
     for i in range(text_len):
